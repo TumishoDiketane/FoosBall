@@ -1,0 +1,177 @@
+.landing-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.title-main {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  color: #16DB65;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.home-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-Play {
+  background: #0B6E4F;
+  color: var(--text-h, #fff);
+  border: none;
+  border-radius: 999px;
+  padding: 14px 48px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+  min-width: 200px;
+}
+
+.btn-Play:hover {
+  background: #0d8a63;
+  transform: translateY(-1px);
+}
+
+.btn-Play:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #16DB65;
+  border: 2px solid #16DB65;
+}
+
+.btn-outline:hover {
+  background: rgba(22, 219, 101, 0.1);
+}
+
+.landing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 320px;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.landing-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-h, #fff);
+}
+
+.landing-form input {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-h, #fff);
+  font-size: 1rem;
+}
+
+.landing-form input:focus {
+  outline: 2px solid #16DB65;
+  outline-offset: 1px;
+}
+
+.join-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  color: var(--text-h, #fff);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.toggle-btn.active {
+  background: #16DB65;
+  color: #0a2e1a;
+  border-color: #16DB65;
+  font-weight: 600;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.form-error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin: 0;
+}
+.spectator-toggle {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.spectator-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.spectator-toggle input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: #16DB65;
+  cursor: pointer;
+}
+button {
+  font-size: clamp(0.8rem, 2vw, 1.2rem); 
+  /* Explanation:
+     - minimum size: 0.8rem
+     - preferred scaling: 2% of viewport width
+     - maximum size: 1.2rem
+  */
+  white-space: nowrap;   /* prevent text from breaking into multiple lines */
+  padding: 0.5rem 1rem;  /* keep spacing consistent */
+}
+.home-actions,
+.form-actions {
+  display: flex;
+  flex-direction: column; /* stack sections vertically */
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 1rem; /* buttons side by side */
+}
+
+.bottom-button {
+  margin-top: 1rem; /* Back to Home always underneath */
+}
