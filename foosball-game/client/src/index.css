@@ -109,3 +109,57 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+.btn-Play {
+  background: #0B6E4F;
+  color: var(--text-h);
+  border: none;
+  border-radius: 999px;   /* pill shape — any value ≥ half the height works */
+  padding: 14px 48px;     /* taller + wider than before makes it read as "wide" */
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn-Play:hover {
+  background: #0d8a63;
+  transform: translateY(-1px);
+}
+
+.btn-Play:active {
+  transform: translateY(0);
+}
+
+
+.btn-Spectate {
+  background: #FF5D73;
+  color: var(--text-h);
+  border: none;
+  border-radius: 999px;   /* pill shape — any value ≥ half the height works */
+  padding: 14px 48px;     /* taller + wider than before makes it read as "wide" */
+  font-size: 1.1rem;
+  margin-left: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn-Spectate:hover {
+  background: #d55365;
+  transform: translateY(-1px);
+}
+
+.btn-Spectate:active {
+  transform: translateY(0);
+}
+
+
+
+.title-main {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #16DB65;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 0.5rem;
+}

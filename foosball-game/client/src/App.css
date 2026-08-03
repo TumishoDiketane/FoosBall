@@ -181,4 +181,11 @@
     right: 0;
     border-right-color: var(--border);
   }
+  .btn
+{
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+
 }
